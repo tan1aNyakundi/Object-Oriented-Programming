@@ -1,0 +1,24 @@
+class smartphone:
+  def __init__(self, size, color, brand):
+    self.size = size
+    self.color = color
+    self.brand = brand 
+  def call(self):
+     print(f"i like your {self.size}, {self.color}, {self.brand} smartphone!")
+
+class iphone(smartphone):
+  def call(self):
+    print(f"calling from {self.size}, {self.color} iphone")
+
+class tecno(smartphone):
+  def call(self):
+    print(f"calling from {self.size}, {self.color} tecno")
+# Create objects
+my_tecno = tecno("big", "black", "Samsung")
+my_iphone = iphone("medium", "white", "Apple")
+
+# Polymorphism in action
+phones = [my_tecno, my_iphone]
+
+for phone in phones:
+    phone.call()   
