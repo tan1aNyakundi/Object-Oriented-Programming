@@ -1,0 +1,14 @@
+class Animal:
+  def move(self):
+    print("How the animal moves")
+
+class lion(Animal):
+  def move(self):
+    print("The lion runs")
+
+class bird(Animal):
+  def move(self):
+    print("The bird flys!")
+
+for animal in(lion(), bird()):
+  animal.move()
